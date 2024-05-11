@@ -1,0 +1,160 @@
+@import url('../../Assets/Fonts/Kotta.css');
+
+:root {
+  --common-font-family: 'Kotta One', serif;
+}
+  /* ---------------------------------------------------- css for Authentication -------------------------------------------  */
+.left-container {
+  background-color: rgb(249, 249, 250);
+
+}
+
+.input-group:focus-within{
+  box-shadow: none !important;
+}
+.profile-img{
+border: 3px dashed #7d7c0e;
+}
+.con {
+  height: 50vh;
+  width: 100%;
+  border: 1px solid;
+}
+
+.login-container {
+  width: 800px;
+}
+
+.lg-heading {
+  font-family: var(--common-font-family);
+}
+
+.form-label,
+.form-control,
+.text-danger,
+.custom-font {
+  font-family: var(--common-font-family);
+}
+
+.link {
+  text-decoration: none;
+  color: #5c00e3;
+}
+
+.custom {
+  outline: none !important;
+}
+
+.PhoneInputInput {
+  outline: none;
+  /* Remove the outline */
+}
+  /* ---------------------------------------------------- css for Authentication -------------------------------------------  */
+/* ----------------------------- css for small screens -------------------------------  */
+@media only screen and (max-width:768px) {
+
+  /* ---------------------------------------------------- css for Authentication -------------------------------------------  */
+  .login-container {
+    border-radius: 0;
+  }
+
+  .left-container-login {
+    height: 53vh;
+  }
+
+  /* ---------------------------------------------------- css for Authentication -------------------------------------------  */
+  /* ------------------------------------------------- css for Forgotpassword ----------------------------------------------  */
+  .left-container-forgotpassword {
+    height: 66vh;
+  }
+
+  .left-container-forgotpassword-otp {
+    height: 60vh;
+  }
+
+  .left-container-forgotpassword-change {
+    height: 54vh;
+  }
+  /* ------------------------------------------------- css for Forgotpassword ----------------------------------------------  */
+  /* -----------------------------------------------------  tabs style -------------------------------------------------------*/
+  .css-6h3tnn,
+  .MuiBox-root {
+    width: 100vw !important;
+  }
+
+  /* -----------------------------------------------------  tabs style -------------------------------------------------------*/
+ /* -----------------------------------------------------  profile form style -----------------------------------------------*/
+  .form-component{
+    width: 100vw;
+  }
+ 
+ /* -----------------------------------------------------  profile form style -----------------------------------------------*/
+}
+
+/* ------------------------------------------- css for the large screens alone -----------------------------------------------  */
+@media only screen and (min-width:768px) {
+  #root {
+    background: linear-gradient(45deg, #e6e7d4, #f4eeda);
+  }
+
+  /* ---------------------------------------------------- css for Authentication -------------------------------------------  */
+  .login-container {
+    border-radius: 1rem;
+  }
+
+  .left-container {
+    background-color: rgb(249, 249, 250);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  /* ---------------------------------------------------- css for Authentication -------------------------------------------  */
+  /* -----------------------------------------------------  tabs style -------------------------------------------------------*/
+  .css-6h3tnn,
+  .MuiBox-root {
+    width: 93.7vw !important;
+  }
+
+  /* -----------------------------------------------------  tabs style -------------------------------------------------------*/
+  /* -----------------------------------------------------  profile form style -----------------------------------------------*/
+  .form-component{
+    width: 70vw;
+  }
+   /* -----------------------------------------------------  profile form style -----------------------------------------------*/
+}
+
+/* -------------------------------------------------------  tabs style -------------------------------------------------------*/
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected,
+.css-aym9vq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #a35f00 !important;
+  /* background: linear-gradient(345deg, #ffe6c1, transparent); */
+  font-size: 18px;
+  font-family: var(--common-font-family);
+  font-weight: 600;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root,
+.css-aym9vq-MuiButtonBase-root-MuiTab-root {
+  font-size: 18px !important;
+  font-family: var(--common-font-family) !important;
+  font-weight: 600 !important;
+  color: #5e4c33 !important;
+}
+.icon-img{
+  height: 10px;
+  width: 10px;
+}
+.css-19kzrtu{
+  padding: 0 !important;
+}
+/* --------------------------------------------------------  tabs style -------------------------------------------------------*/
+.profile-photo{
+  border: 3px solid grey;
+}
+.edit-profile {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  right: 0px;
+  top: -3px;
+}
