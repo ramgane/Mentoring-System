@@ -1,2 +1,0 @@
-# Mentoring-System
-College Project
