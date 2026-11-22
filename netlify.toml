@@ -1,0 +1,22 @@
+# The deployable site is the Create React App frontend in Frontend/.
+# (Backend/ is a separate Express + MongoDB API and is not built or deployed here.)
+[build]
+  base = "Frontend"
+  # The package.json "build" script runs `react-csp prod` first, but the repo has
+  # no csp.json/csp.js config, so that step always fails. Run the CRA build directly.
+  # CI=false stops CRA from treating the existing ESLint warnings as errors.
+  command = "CI=false npx react-scripts build"
+  # Relative to the base directory: Frontend/build
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # package-lock.json pins react@18.2.0 alongside react-dom@18.3.1 (which needs
+  # react ^18.3.1), so a strict install fails with ERESOLVE.
+  NPM_FLAGS = "--legacy-peer-deps"
+
+# Client-side routing (BrowserRouter): serve index.html for deep links.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
